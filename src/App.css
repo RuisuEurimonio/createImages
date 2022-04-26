@@ -1,38 +1,99 @@
 .App {
   text-align: center;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.information{
+  text-align: center;
+  width: 80%;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.information__title{
+  margin-top: .3em;
+  padding-top: .2em;
+  border: .1rem solid #000;
+  border-bottom: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.select{
+  width: 10em;
+  height: 2em;
+  font-size: .8em;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.form{
+  width: 80%;
+  margin: auto;
+  padding: .5em;
+  border: .1em solid #000;
+  border-top: none;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form__label{
+  margin-top: .2em;
+  display: block;
+  text-align: left;
+  margin-left: 4em;
+  font-weight: bold;
+}
+
+.form__input--text{
+  width: 13em;
+  height: 1.6em;
+  margin-top: .6em;
+  font-size: .8em;
+}
+
+.form__input--button{
+  margin-top: .8em;
+  width: 10em;
+  height: 2em;
+  background-color: rgb(80, 80, 80);
+  border: .1em solid rgb(200, 200, 200);
+  border-radius: .4em;
+  padding: .2em;
+  color: rgb(200, 200, 200);
+  transition: 1s;
+  cursor: pointer;
+}
+
+.form__input--button:hover,
+.form__input--button:active{
+  border-color: rgb(80, 80, 80);
+  background-color: rgb(200, 200, 200);
+  color: rgb(80, 80, 80);
+  transition: 1.5s;
+}
+
+.image{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image__text{
+  position: absolute;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-shadow: #fff 1px 0px 0px, #fff 0px 1px 0px, #fff -1px 0px 0px, #fff 0px -1px 0px;
+  left: 0;
+  right: 0;
+}
+
+.image__text--top{
+  top: 3em;
+}
+
+.image__text--bottom{
+  bottom: 1em;
+}
+
+.image__img{
+  border: .1em solid #000;
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: cover;
 }
